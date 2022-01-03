@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.nav-links{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+
+    margin: 0.5rem;
+    text-align:right;
+    
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+    color: black;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    transition: 0.1s ease-in-out;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    
+}
+
+a:hover{
+    color: rgba(231, 116, 7, 0.9);
+    border-left: solid rgba(231, 116, 7, 0.4) 2px;
+    
+}
+
+.slogan {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+/*     background-color: rgba(231, 116, 7, 0.9);
+ */
+}
+
+
+.div-title{
+    background-color: rgba(231, 116, 7, 0.9);
+    flex-basis: 70%;    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 4rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.div-words{
+    flex-basis: 30%;
+
+}
+
+.words{
+    margin: 1rem;
+    color: grey;
+    font-style: italic;
+    text-align: center;
+}
+
+.about{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    
+    
+}
+
+
+
+
+
+
+
+@media (max-width: 700px){
+    
+    .intro{
+        
+        min-height: 70px;
+        width:100%;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        
+    }
+    
+    .nav-links{
+        
+        margin-bottom:3rem;
+        
+        text-align: center;
+        
+    }
+    
+    .logo{
+        width:300px;
+        
+        
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        width:100%;
+        margin: auto;
+       
+    }
+
+   
+
+    a{
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .slogan{
+        flex-direction: column;
+
+
+    }
+
+    .title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: white;
+        margin: auto;
+    }
+
+    .div-title{
+        width:100%;
+        border-radius: 35rem 3rem 3rem 35rem;
+        margin-right: 3rem;
+    }
+
+    .about {
+
+        
+        flex-wrap: wrap;
+    }
+
+}
