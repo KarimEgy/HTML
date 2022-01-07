@@ -110,7 +110,7 @@ li {
       rgba(68, 10, 2, 0.664),
       rgba(27, 26, 24, 0.521)
     ),
-    url("../images/wp8414109.webp");
+    url("images/wp8414109.webp");
   background-size: cover;
 }
 
@@ -314,7 +314,7 @@ li {
   align-items:center;
 }
 .map{
-  max-width: 800px;
+  width: 550px;
   height:350px
   
 }
