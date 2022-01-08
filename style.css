@@ -81,11 +81,11 @@ li {
   font-weight: bold;
   color: white;
 }
-@media (max-width: 920px) {
+/* @media (max-width: 920px) {
   .title {
     font-size: 1.8rem;
   }
-}
+} */
 
 .div-words {
   flex-basis: 30%;
@@ -249,7 +249,7 @@ li {
 }
 
 .project-card-image{
-  width: 600px;
+  max-width: 600px;
   height: 400px;
 }
 .project-card-link {
@@ -376,6 +376,7 @@ li {
 }
 .address p, .contact p{
   font-size: 0.85rem;
+  white-space: nowrap;
   
 }
 .contact p{
@@ -412,7 +413,7 @@ li {
   text-decoration: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .intro {
     min-height: 70px;
     min-width: 360px;
