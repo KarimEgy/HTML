@@ -98,6 +98,36 @@ li {
   text-align: center;
 }
 
+.projects-peek{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.projects-peek div{
+  background-image: url(images/wp8414109.webp);
+  
+  background-size: cover;
+  
+  height: 600px;
+  width:90%;
+  display: flex;
+  align-items:flex-start;
+  border-radius: 1.5rem;
+}
+.projects-peek h1{
+  color: rgb(39, 0, 0);
+  font-size: 4rem;
+  font-weight:900;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  line-height: 3.95rem;
+  text-transform: uppercase;
+}
+.projects-peek a:link, .projects-peek a:visited{
+  color:white;
+  text-decoration: none;
+}
+
 .about {
   
   /*   background-color: rgba(128, 128, 128, 0.473);
@@ -116,7 +146,8 @@ li {
 }
 
 .about-us,
-.projects-title {
+.projects-title,
+.contact-us-title {
   
 
   background-color: rgba(231, 116, 7, 0.9);
@@ -128,7 +159,8 @@ li {
 }
 
 .about-us-title,
-.projects-title-header {
+.projects-title-header,
+.contact-us-header {
   font-size: 2rem;
   color: white;
   letter-spacing: 0.2rem;
@@ -212,6 +244,7 @@ li {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  gap:1rem;
   
 }
 
@@ -303,7 +336,7 @@ li {
   display:flex;
   justify-content:center;
   align-items:center;
-  
+  margin-bottom: 20px;
   padding: 0 2rem;
   
 }
@@ -348,8 +381,35 @@ li {
 .contact p{
   line-height: 2rem;
 }
-.contact a:visited{
+.contact a:link, .contact a:visited{
   color:white;
+  text-decoration: none;
+}
+.footer{
+  position: -webkit-sticky;
+    position: sticky;
+    
+    bottom: 0px;
+    width: 100vw;
+}
+.footer div{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: rgba(105, 105, 105,0.8);
+  height: 2rem;
+  white-space: nowrap;
+}
+.footer p, .footer a{
+  margin-right: 15rem;
+  margin-left: 15rem;
+  color:white;
+  letter-spacing: 0.3rem;
+  font-size: 00.85rem;
+}
+.footer a:link, .footer a:visited{
+  color:white;
+  text-decoration: none;
 }
 
 @media (max-width: 700px) {
@@ -416,6 +476,32 @@ li {
 
   .words-home {
     font-size: 0.9rem;
+  }
+  .projects-peek{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .projects-peek div{
+    background-image: url(images/wp8414109.webp);
+    
+    background-size: cover;
+    height: 500px;
+    width:90%;
+    display: flex;
+    align-items:flex-end;
+    border-radius: 1.5rem;
+  }
+  .projects-peek h1{
+    color: white;
+    font-size: 2.4rem;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    line-height: 2rem;
+  }
+  .projects-peek a:link, .projects-peek a:visited{
+    color:white;
+    text-decoration: none;
   }
 
   .about {
@@ -710,6 +796,35 @@ li {
   }
   .contact a:visited{
     color:white;
+  }
+
+  .footer{
+    position: -webkit-sticky;
+    position: sticky;
+    
+    bottom: 0px;
+    width: 100vw;
+  }
+  .footer div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(105, 105, 105,0.8);
+    height: 1.5rem;
+    
+  }
+  .footer p, .footer a{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color:white;
+    letter-spacing: 0rem;
+    font-size: 00.7rem;
+    
+  }
+  
+  .footer a:link, .footer a:visited{
+    color:white;
+    text-decoration: none;
   }
   
 }
